@@ -4,7 +4,7 @@ document.querySelector(`#hamburger-menu`).onclick = () => {
   navbarNav.classList.toggle(`active`);
 };
 
-// klick outside sidenav to exit
+// click outside sidenav to exit
 const hamburgerExit = document.querySelector(`#hamburger-menu`);
 
 document.addEventListener(`click`, function (e) {
@@ -12,22 +12,7 @@ document.addEventListener(`click`, function (e) {
     navbarNav.classList.remove(`active`);
   }
 });
-
-// Toggle Dropdown
-const dropDown = document.querySelector(`#myDropdown`);
-document.querySelector(`.dropdown`).onclick = () => {
-  dropDown.classList.toggle(`show`);
-};
-
-// klick outside dropdown to exit
-const dropdownExit = document.querySelector(`.dropdown`);
-
-document.addEventListener(`click`, function (e) {
-  if (!dropdownExit.contains(e.target) && !dropDown.contains(e.target)) {
-    dropDown.classList.remove(`show`);
-  }
-});
-
+//POP UP
 function showPopup(title, text) {
   document.getElementById('popup-title').innerText = title;
   document.getElementById('popup-text').innerText = text;
@@ -59,5 +44,3 @@ function showPopup(title, text, showVideo = false) {
   
   document.getElementById('popup').style.display = 'block'; // Show popup
 }
-
-

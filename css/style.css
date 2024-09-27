@@ -136,18 +136,6 @@ html {
   mix-blend-mode: difference;
 }
 
-.dashboard,
-.transaction {
-  padding: 10rem 7% 1.4rem;
-}
-
-.dashboard h2,
-.transaction h2 {
-  text-align: center;
-  font-size: 2.6rem;
-  margin-bottom: 2rem;
-  color: var(--primary);
-}
 
 .about-us {
   display: flex;
@@ -864,48 +852,6 @@ input::-webkit-inner-spin-button {
   margin: 0;
 }
 
-/* Dropdown */
-.dropbtn {
-  background-color: var(--secondary);
-  color: var(--dark);
-  padding: 16px;
-  font-size: 16px;
-  max-width: max-content;
-  border: none;
-  cursor: pointer;
-}
-
-.dropbtn:hover,
-.dropbtn:focus {
-  background-color: var(--mid);
-}
-
-.dropdown {
-  position: relative;
-  display: inline-block;
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: var(--mid);
-  min-width: 160px;
-  overflow: auto;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  z-index: 1;
-}
-
-.dropdown-content a {
-  color: var(--primary);
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-}
-
-.dropdown a:hover {
-  background-color: var(--dark);
-  color: var(--mid);
-}
 
 .show {
   display: block;
@@ -919,13 +865,6 @@ input::-webkit-inner-spin-button {
     font-size: 75%;
   }
 
-  .dashboard .row .dashboard-card .dashboard-card-title {
-    font-size: 4.5rem;
-  }
-
-  .dashboard .row .dashboard-card .dashboard-card-value {
-    font-size: 6.5rem;
-  }
 }
 
 /* Tablet */
